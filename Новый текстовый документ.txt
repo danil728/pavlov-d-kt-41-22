@@ -10,3 +10,11 @@
 
 
 Date = DateTime.Now.AddDays(index),
+
+
+
+1. Выполнить коммит
+git commit -m "------------------"
+
+2. Отправить коммит в удаленный репозиторий
+git push origin main
