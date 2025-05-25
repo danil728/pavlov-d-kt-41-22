@@ -1,11 +1,15 @@
-﻿namespace pavlov_d_kt_41_22.Models
-{
-    public class Department //Кафедра
-    {
-        public int DepartmentId { get; set; }
-        public string Name { get; set; }
-        public int HeadTeacherId { get; set; }  // ID заведующего кафедрой
+﻿using pavlov_d_kt_41_22.Models;
 
-        public Teacher HeadTeacher { get; set; }
+namespace pavlov_d_kt_41_22.Models
+{
+    public class Department
+    {
+        public int Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public DateTime? FoundationDate { get; set; }
+        public int? HeadId { get; set; } // Ссылается на преподавателя
+        public Teacher? Head { get; set; } // Навигационное свойство
+        public ICollection<Teacher> Teachers { get; set; } = new List<Teacher>();
+
     }
 }

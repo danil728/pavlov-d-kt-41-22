@@ -1,10 +1,12 @@
-﻿using System.Text.RegularExpressions;
+﻿using pavlov_d_kt_41_22.Models;
 
 namespace pavlov_d_kt_41_22.Models
 {
     public class AcademicDegree
     {
-        public int ADId { get; set; }
-        public string Name { get; set; }
+        public int Id { get; set; }
+        public string Title { get; set; } = string.Empty;
+        public ICollection<Teacher> Teachers { get; set; } = new List<Teacher>();
+
     }
 }

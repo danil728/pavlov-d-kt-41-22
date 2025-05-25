@@ -18,3 +18,14 @@ git commit -m "------------------"
 
 2. Отправить коммит в удаленный репозиторий
 git push origin main
+
+
+
+
+
+POST
+​/Departments​/add
+{
+  "name": "Каф1",
+  "foundationDate": "2025-05-21T00:00:00"
+}
